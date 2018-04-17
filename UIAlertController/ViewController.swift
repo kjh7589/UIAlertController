@@ -19,17 +19,17 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: Any) {
         let myAlert = UIAlertController(title: "알림", message: "설정된 시간이 되었습니다!!", preferredStyle: .alert)
     
-        let okAction = UIAlertAction(title: "확인", style: .default, handler: {(myAction: UIAlertAction)-> Void in
+        let okAction = UIAlertAction(title: "확인", style: .default) {(myAction: UIAlertAction)-> Void in
             self.view.backgroundColor = UIColor.red
-        })
+        }
         
-        let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: { (myAction: UIAlertAction) -> Void in
+        let cancelAction = UIAlertAction(title: "취소", style: .cancel) { (myAction: UIAlertAction) -> Void in
             self.view.backgroundColor = UIColor.white
-        })
+        }
         
-        let testAction = UIAlertAction(title: "지우기", style: .destructive, handler: { (myAction: UIAlertAction) -> Void in
+        let testAction = UIAlertAction(title: "지우기", style: .destructive) { (myAction: UIAlertAction) -> Void in
             self.view.backgroundColor = UIColor.green
-        })
+        }
         
         myAlert.addAction(okAction)
         myAlert.addAction(cancelAction)
