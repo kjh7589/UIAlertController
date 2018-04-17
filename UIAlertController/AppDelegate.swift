@@ -3,7 +3,7 @@
 //  UIAlertController
 //
 //  Created by D7703_25 on 2018. 4. 17..
-//  Copyright © 2018년 김영석. All rights reserved.
+//  Copyright © 2018년 김재현. All rights reserved.
 //
 
 import UIKit
